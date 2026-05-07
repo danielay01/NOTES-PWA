@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0f172a">
+
     <style>
         * {
             box-sizing: border-box;
@@ -202,9 +207,21 @@
 
                 <button class="btn" type="submit">Login</button>
 
+
                 <a class="register-link" href="{{ route('register') }}">
                     Create an Account
                 </a>
+
+              <button id="installBtn"
+        type="button"
+        class="btn btn-secondary w-100 mt-3 fw-semibold"
+        style="display:none;">
+    Install App
+</button>
+
+
+
+
             </form>
         </div>
 
